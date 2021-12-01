@@ -27,6 +27,25 @@ a {
   font-weight: 500;
 }
 
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+}
+
 #map-btn,
 #list-btn {
   background-color: rgb(110, 152, 199);
@@ -50,4 +69,10 @@ a {
 #map {
   height: calc(100vh - 150px);
   width: 100vw;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
 }

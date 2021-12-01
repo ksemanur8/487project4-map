@@ -49,7 +49,7 @@ function handleData(data) {
       })
       document.getElementById("myModal").innerHTML = '<h3>' +
       placeName + '</h3><img width="75%" height="75%" src=' + placePhoto + '>' +
-      '<p>' + placeAddress + '</p><p>' + placeDescription + '</p>' + 
+      '<h4>' + placeAddress + '</h4><p>' + placeDescription + '</p>' + 
       '<a href="#" rel="modal:close"></a>';
     })
 };

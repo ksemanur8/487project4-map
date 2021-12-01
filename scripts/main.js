@@ -1,4 +1,6 @@
-let map;
+var map;
+var mapdiv = document.getElementById("map");
+var listdiv = document.getElementById("list");
 
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
@@ -26,12 +28,17 @@ function handleData(data) {
               '<div id="minifo">' +
                 '<h3>' + elt.name + '</h3>' 
                 + '<p>' + elt.address + 
-                '</p><a href="#myModal" rel="modal:open" class="modalClick" id="' + elt.id + '">More Info</a></div>'
+                '</p><a href="#myModal" rel="modal:open" class="modalClick" id="' + elt.id + '">Learn More</a></div>'
           });
           myMarker.addListener("click", () => {
             infoTip.open({ anchor: myMarker, map, shouldFocus: false });
-          });      
+          });  
+          listdiv.innerHTML += '<div class="listCard">' +
+          '<h3>' + elt.name + '</h3>' 
+          + '<p>' + elt.address + 
+         '</p><a href="#myModal" rel="modal:open" class="modalClick" id="' + elt.id + '">Learn More</a></div>';    
     })
+
 
     $(document).on("click", ".modalClick", function (event) {
       let placeId = event.target.id;
@@ -53,3 +60,18 @@ function handleData(data) {
       '<a href="#" rel="modal:close"></a>';
     })
 };
+
+function mapClick() {
+  if(mapdiv.classList.contains("inactive")) {
+    mapdiv.classList.remove("inactive");
+    listdiv.classList.add("inactive");
+  }
+}
+
+function listClick() {
+  if(listdiv.classList.contains("inactive")) {
+    listdiv.classList.remove("inactive");
+    mapdiv.classList.add("inactive");
+    document.body.classList.add("onlist");
+  }
+}

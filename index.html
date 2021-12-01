@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calm on Campus</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpeg"
+      href="./images/marker-light.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <div id="head">
+      <h1>Places to Relax on UNC-Chapel Hill's Campus</h1>
+      <div>
+        <button type="button" id="map-btn">Map View</button
+        ><button type="button" id="list-btn">List View</button>
+      </div>
+    </div>
+    <!--Map-->
+    <div id="map"></div>
+    <!--List-->
+    <div id="list"></div>
+    <!------Scripts------->
+    <!--JQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!--Tooltips-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/StephanWagner/jBox@v1.3.3/dist/jBox.all.min.js"></script>
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/3941123ac2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--My js-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="./scripts/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAheRnlhtaGbEeZw7cQMHz-i9yFVnR9XW4&callback=initMap"
+      async
+    ></script>
+  </body>
+</html>

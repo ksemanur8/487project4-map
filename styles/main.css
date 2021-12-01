@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#head {
+  height: 150px;
+  background-color: rgb(110, 152, 199);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Lalezar", cursive;
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#map-btn,
+#list-btn {
+  background-color: rgb(110, 152, 199);
+  border: white 3px solid;
+  border-radius: 30px;
+  color: white;
+  padding: 8px 20px;
+  font-size: 16px;
+  margin-right: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(110, 152, 199);
+  transition: ease-in 0.2s;
+}
+/* Map Styling */
+#map {
+  height: calc(100vh - 150px);
+  width: 100vw;
+}

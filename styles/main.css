@@ -21,6 +21,12 @@ h1 {
   text-align: center;
 }
 
+a {
+  color: rgb(13, 40, 192);
+  cursor: pointer;
+  font-weight: 500;
+}
+
 #map-btn,
 #list-btn {
   background-color: rgb(110, 152, 199);
@@ -34,7 +40,8 @@ h1 {
   font-weight: 500;
 }
 
-button:hover {
+#map-btn:hover,
+#list-btn:hover {
   background-color: white;
   color: rgb(110, 152, 199);
   transition: ease-in 0.2s;

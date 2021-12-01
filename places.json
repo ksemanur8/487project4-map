@@ -5,7 +5,8 @@
         "description": "The Meditation Room is available to all UNC students, faculty, and staff at all times when the Carolina Union is open. The Meditation Room’s purpose is stress reduction.  As such, it is available for quiet contemplation, meditation, reflection, or prayer.",
         "photo": "union-meditation.jpeg",
         "latitude": 35.909821,
-        "longitude": -79.047234
+        "longitude": -79.047234,
+        "id": 1
     },
     {
         "name": "The Healing Space",
@@ -13,7 +14,8 @@
         "description": "Filled with chocolates, natural lighting and comfortable places to relax, The Healing Space is a space in the Union designed to bring you comfort whenever you may need it.",
         "photo": "healing-space.jpeg",
         "latitude": 35.909821,
-        "longitude": -79.047234
+        "longitude": -79.047234,
+        "id": 2
     },
     {
         "name": "Coker Arboretum",
@@ -21,7 +23,8 @@
         "description": "Coker Arboretum is an arboretum within the North Carolina Botanical Garden on the campus of the University of North Carolina, Chapel Hill, North Carolina. The collection consists of a wide variety of plantings including flowering trees and shrubs as well as bulb and perennial displays. It is open daily without charge.",
         "photo": "coker-arboretum.jpeg",
         "latitude": 35.913220,
-        "longitude": -79.047880
+        "longitude": -79.047880,
+        "id": 3
     },
     {
         "name": "FedEx Global Center Meditation Room",
@@ -29,7 +32,8 @@
         "description": "The meditation room enhances reflection and prayer through insulation from external sound, softened lighting and access to floor cushions and mats. The room is open during regular building hours and is available to all visitors to the FedEx Global Education Center.",
         "photo": "global-center.jpeg",
         "latitude": 35.907108,
-        "longitude": -79.054237
+        "longitude": -79.054237, 
+        "id": 4
     },
     {
         "name": "Wilson Library",
@@ -37,7 +41,8 @@
         "description": "Wilson Library is a library at UNC that was completed in 1929 and sits across Polk Place. It houses several special collections and contains beautiful architecture and one of the quietest study spaces on campus.",
         "photo": "wilson-library.jpeg",
         "latitude": 35.908600,
-        "longitude": -79.049232
+        "longitude": -79.049232,
+        "id": 5
     },
     {
         "name": "The Forest Theatre",
@@ -45,7 +50,8 @@
         "description": "Historic campus amphitheater staging theatrical & musical shows & other events in a scenic setting.",
         "photo": "forest-theatre.png",
         "latitude": 35.916510,
-        "longitude": -79.045560
+        "longitude": -79.045560,
+        "id": 6
     },
     {
         "name": "Order of Gimghoul",
@@ -53,7 +59,8 @@
         "description": "The Order of Gimghoul is a castle that was built in 1924 for a secret collegiate society of the same name. There are many mysterious stories surrounding the castle but it is a fascinating sight to see, especially in the fall when the castle and the quiet neighborhood leading up to it are surrounded by colorful leaves.",
         "photo": "gimghoul.png",
         "latitude": 35.9119792,
-        "longitude": -79.0360596
+        "longitude": -79.0360596, 
+        "id": 7
     },
     {
         "name": "Hooker Fields",
@@ -61,7 +68,8 @@
         "description": "Located across from the main entrance of Carmichael Auditorium, Intramural Sports use these fields for flag football, soccer, softball, and kickball. It is open 24/7 for any student to go relieve stress.",
         "photo": "hooker-fields.jpeg",
         "latitude": 35.910247802734375,
-        "longitude": -79.04508209228516
+        "longitude": -79.04508209228516,
+        "id": 8
     },
     {
         "name": "Stone and Leaf Cafe",
@@ -69,7 +77,8 @@
         "description": "Stone and Leaf is a cafe in the UNC Student Stores that serves food and drinks from Starbucks and also contains a mini convenience store. There is plenty of indoor seating at the cafe but the best part is the balcony outside of the cafe which faces the Bell Tower.",
         "photo": "stone-leaf.jpeg",
         "latitude": 35.9098278,
-        "longitude": -79.0483754
+        "longitude": -79.0483754,
+        "id": 9
     },
     {
         "name": "Morrison Art Center",
@@ -77,7 +86,8 @@
         "description": "The Morrison Art Studio is a space located in Morrison Residence Hall that features flexible workspaces for students to draw, paint, sketch, store and display all kinds of art.",
         "photo": "morrison-art.jpeg",
         "latitude": 35.90304946899414,
-        "longitude": -79.04605865478516
+        "longitude": -79.04605865478516,
+        "id": 10
     },
     {
         "name": "BeAM Makerspace in Murray",
@@ -85,7 +95,8 @@
         "description": "Being creative and making things can serve as therapy. The Murray makerspace offers several basic tools and mmachines like laser cutters, 3D printers, a vinyl cutter, embroidery machine, Wood Shop, Metal Shop, and more.",
         "photo": "beam-murray.jpeg",
         "latitude": 35.910774,
-        "longitude": -79.042427
+        "longitude": -79.042427,
+        "id": 11
     },
     {
         "name": "BeAM Makerspace in Carmichael",
@@ -93,7 +104,8 @@
         "description": "Being creative and making things can serve as therapy. The Murray makerspace offers several basic tools and mmachines like sewing machines, 3D printers, a vinyl cutter, embroidery machine, and more.",
         "photo": "beam-cmike.jpeg",
         "latitude": 35.907795,
-        "longitude": -79.0474503
+        "longitude": -79.0474503,
+        "id": 12
     },
     {
         "name": "BeAM Makerspace in Hanes",
@@ -101,6 +113,7 @@
         "description": "Being creative and making things can serve as therapy. The Murray makerspace offers several basic tools and mmachines like huge laser cutters and more.",
         "photo": "hanes-art.jpeg",
         "latitude": 35.9124013,
-        "longitude": -79.0543907
+        "longitude": -79.0543907,
+        "id": 13
     }
 ]

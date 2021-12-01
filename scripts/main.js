@@ -21,50 +21,35 @@ function handleData(data) {
                 lng: elt.longitude
             }
         })
-        
         var infoTip = new google.maps.InfoWindow({
             content:
               '<div id="minifo">' +
                 '<h3>' + elt.name + '</h3>' 
                 + '<p>' + elt.address + 
-                '</p><a class="viewModal" onclick="generateModal(' + elt.id + ')">More Info</a></div>'
+                '</p><a href="#myModal" rel="modal:open" class="modalClick" id="' + elt.id + '">More Info</a></div>'
           });
           myMarker.addListener("click", () => {
             infoTip.open({ anchor: myMarker, map, shouldFocus: false });
-          });
-          
+          });      
     })
-}
 
-function generateModal(id) {
-    let placeName;
-    let placeAddress;
-    let placeDescription;
-    let placePhoto;
-
-    fetch("places.json")
-  .then((response) => response.json())
-  .then((json) => handleData(json))
-    data.forEach((elt) => {
-        if(elt.id == id) {
-            elt.name = placeName;
-            elt.address = placeAddress;
-            elt.description = placeDescription;
-            elt.photo = placePhoto;
+    $(document).on("click", ".modalClick", function (event) {
+      let placeId = event.target.id;
+      let placeName;
+      let placeAddress;
+      let placeDescription;
+      let placePhoto;
+      data.forEach((elt) => {
+        if(elt.id == placeId) {
+          placeName = elt.name;
+          placeAddress = elt.address;
+          placeDescription = elt.description;
+          placePhoto = elt.photo;
         }
-    })
-    new jBox('Modal', {
-        width: 300,
-        height: 300,
-        attach: '.viewModal',
-        title: 'My Modal Window',
-        content: '<div id="morefo">' +
-        '<h3>' + placeName + '</h3>' 
-        + '<img src="' + placePhoto + '"/>' + 
-        '<p>' + placeAddress + '</p>' + 
-        + '<p>' + placeDescription + '</p>' + 
-        '</div>'
       })
-
- };
-
+      document.getElementById("myModal").innerHTML = '<h3>' +
+      placeName + '</h3><img width="75%" height="75%" src=' + placePhoto + '>' +
+      '<p>' + placeAddress + '</p><p>' + placeDescription + '</p>' + 
+      '<a href="#" rel="modal:close"></a>';
+    })
+};

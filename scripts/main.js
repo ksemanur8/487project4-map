@@ -33,6 +33,9 @@ function handleData(data) {
           myMarker.addListener("click", () => {
             infoTip.open({ anchor: myMarker, map, shouldFocus: false });
           });  
+          map.addListener("click", () => {
+            infoTip.close();
+        });
           listdiv.innerHTML += '<div class="listCard">' +
           '<h3>' + elt.name + '</h3>' 
           + '<p>' + elt.address + 
@@ -60,6 +63,7 @@ function handleData(data) {
       '<a href="#" rel="modal:close"></a>';
     })
 };
+
 
 function mapClick() {
   if(mapdiv.classList.contains("inactive")) {
